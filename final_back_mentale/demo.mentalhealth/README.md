@@ -1,23 +1,23 @@
-# Mental Health Application - Backend
+# Application de Santé Mentale - Backend
 
 ## Description
-Backend application for mental health management system built with Spring Boot and Docker.
+Application backend pour un système de gestion de la santé mentale construite avec Spring Boot et Docker.
 
-## Technologies Used
+## Technologies Utilisées
 - Java 17
 - Spring Boot
 - Docker
 - Maven
-- SonarQube for code quality
+- SonarQube pour la qualité du code
 - Eclipse Temurin JDK
 
-## Prerequisites
-- Java 17 or higher
+## Prérequis
+- Java 17 ou supérieur
 - Docker
 - Maven
 - Docker Compose
 
-## Project Structure
+## Structure du Projet
 ```
 mentalhealth/
 ├── src/
@@ -28,30 +28,30 @@ mentalhealth/
 └── README.md
 ```
 
-## Installation Steps
+## Étapes d'Installation
 
-1. Clone the repository
+1. Cloner le dépôt
 ```bash
-git clone [your-repository-url]
+git clone [url-de-votre-dépôt]
 cd mentalhealth
 ```
 
-2. Build the application
+2. Construire l'application
 ```bash
 mvn clean package -DskipTests
 ```
 
-3. Build Docker image
+3. Construire l'image Docker
 ```bash
 docker build -t monapp-spring:1.0 .
 ```
 
-4. Run the application
+4. Lancer l'application
 ```bash
 docker-compose up
 ```
 
-## Docker Configuration
+## Configuration Docker
 
 ### Dockerfile
 ```dockerfile
@@ -61,61 +61,48 @@ COPY target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
-## Docker Build Process
-![Docker Build Process](project_screenshots/docker_build.png)
-*Docker building the JDK Alpine image and downloading necessary components*
+## Processus de Construction Docker
+![photoDocker](https://github.com/user-attachments/assets/75971b21-863b-4b85-a165-2cff5aaf24a8)
+*Construction de l'image JDK Alpine et téléchargement des composants nécessaires*
 
-## Docker Compose Execution
-![Docker Compose](project_screenshots/docker_compose.png)
-*Docker Compose pulling and running the database container*
+## Exécution de Docker Compose
+![photo2](https://github.com/user-attachments/assets/4c47458e-0217-43cf-aa86-063c1ab30040)
+*Docker Compose téléchargeant et exécutant le conteneur de base de données*
 
-## Code Quality Analysis (SonarQube)
+## Analyse de la Qualité du Code (SonarQube)
 
-### Overview Dashboard
-![SonarQube Dashboard](project_screenshots/sonarqube_dashboard.png)
-*SonarQube analysis showing code quality metrics*
+### Métriques Détaillées
+![photo4](https://github.com/user-attachments/assets/b5ace586-6061-4cc6-aaa6-9be9bbd8ccf0)
+*Répartition détaillée des paramètres de qualité du code*
 
-### Detailed Metrics
-![SonarQube Details](project_screenshots/sonarqube_details.png)
-*Detailed breakdown of code quality parameters*
+Métriques actuelles :
+- Lignes de Code : 1.8k
+- Maintenabilité : A (62 points)
+- Fiabilité : C (17 points)
+- Sécurité : E (1 problème)
+- Couverture de Code : 0%
+- Duplications : 0%
 
-Current metrics:
-- Lines of Code: 1.8k
-- Maintainability: A (62 points)
-- Reliability: C (17 points)
-- Security: E (1 issue)
-- Code Coverage: 0%
-- Duplications: 0%
+## Surveillance des Performances
 
-## Performance Monitoring
+### Utilisation de la Mémoire
+![photo5](https://github.com/user-attachments/assets/dfc68b70-3681-4e3c-b122-9f27ea0aa2a7)
+*Surveillance de l'utilisation de la mémoire du conteneur (706.1MB / 15.16GB)*
 
-### Memory Usage
-![Memory Usage](project_screenshots/memory_usage.png)
-*Container memory usage monitoring (706.1MB / 15.16GB)*
+### Utilisation du CPU
+![photo6](https://github.com/user-attachments/assets/e16efcd8-0eb3-4751-9682-4b656acb06d5)
+*Surveillance de l'utilisation du CPU du conteneur (0.80% / 1200%)*
 
-### CPU Usage
-![CPU Usage](project_screenshots/cpu_usage.png)
-*Container CPU usage monitoring (0.80% / 1200%)*
+## Exigences Système
+- Mémoire : Minimum 1GB recommandé (Utilisation actuelle ~706MB)
+- CPU : Multi-cœurs supporté (12 CPUs disponibles)
 
-## System Requirements
-- Memory: Minimum 1GB recommended (Currently using ~706MB)
-- CPU: Multi-core supported (12 CPUs available)
+## Base de Données
+- Base de données embarquée pour l'évaluation
+- Taille : ~65MB
 
-## Database
-- Embedded database for evaluation purposes
-- Size: ~65MB
-
-## Development Notes
-- The embedded database should only be used for evaluation purposes
-- Ensure proper security measures are implemented before production deployment
-- Increase test coverage recommended
-- Address reliability issues identified by SonarQube
-
-## Contributing
-[Add your contribution guidelines here]
-
-## License
-[Add your license information here]
-
-## Contact
-[Add your contact information here]
+## Notes de Développement
+- La base de données embarquée ne doit être utilisée qu'à des fins d'évaluation
+- Assurez-vous que les mesures de sécurité appropriées sont mises en place avant le déploiement en production
+- Augmentation de la couverture des tests recommandée
+- Résoudre les problèmes de fiabilité identifiés par SonarQube
