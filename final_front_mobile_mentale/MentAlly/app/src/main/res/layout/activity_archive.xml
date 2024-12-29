@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFE9ED"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/niama" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Archive des Conversations"
+        android:textColor="#D5006D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStatistics"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="16dp"
+        android:background="#FFC0CB"
+        android:text="View Statistics"
+        android:textColor="@android:color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFC2CD"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+    <TextView
+        android:id="@+id/emptyStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Aucune conversation trouvée"
+        android:visibility="gone"/>
+</LinearLayout>

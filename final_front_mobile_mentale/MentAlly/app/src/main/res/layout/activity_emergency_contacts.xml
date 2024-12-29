@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:textColor="#D5006D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Add Emergency Contact"
+        android:textAllCaps="false"
+        android:background="#D5006D"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/addButton"
+        android:layout_above="@id/delete_list_btn"
+        android:layout_marginVertical="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/>
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No emergency contacts added yet"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/delete_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Delete All Contacts"
+        android:textAllCaps="false"
+        android:background="#D5006D"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

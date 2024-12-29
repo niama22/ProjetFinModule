@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:background="#FFC0CB"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            app:srcCompat="@drawable/niama"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arima_madurai_extrabold"
+            android:paddingVertical="20sp"
+            android:text="Add Your Mood"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='"Your mood should not dictate your manners"'
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+        android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/moodlistbackground"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Warning Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*In order to add mood you must select a date and emoji"
+            android:textAlignment="center"
+            android:textColor="#B71C1C"
+            android:textSize="10sp"
+            android:padding="5dp"/>
+
+        <!-- Date Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On..."
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/calendar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/calender"/>
+
+            <TextView
+                android:id="@+id/selectdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="#FFB2D3"
+            android:padding="10dp"
+            android:text="select date"
+            android:textAlignment="center"
+            android:textColor="#000C5D"
+            android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- Mood Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I felt..."
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="2"
+            android:layout_marginHorizontal="16dp">
+
+            <Button android:id="@+id/happy" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/happy"/>
+            <Button android:id="@+id/sad" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/sad"/>
+            <Button android:id="@+id/cool" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/cool"/>
+            <Button android:id="@+id/lovely" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/lovely"/>
+            <Button android:id="@+id/scared" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/scared"/>
+            <Button android:id="@+id/nerd" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/nerd"/>
+            <Button android:id="@+id/sick" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/sick"/>
+            <Button android:id="@+id/neutral" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/neutral"/>
+            <Button android:id="@+id/flushed" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/flushed"/>
+            <Button android:id="@+id/depressed" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/depressed"/>
+            <Button android:id="@+id/angel" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/angel"/>
+            <Button android:id="@+id/sleepy" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/sleepy"/>
+            <Button android:id="@+id/angry" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/angry"/>
+            <Button android:id="@+id/devil" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/devil"/>
+        </GridLayout>
+
+        <!-- Description Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Because..."
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/descbox"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/textview_outline"
+            android:padding="10dp"
+            android:gravity="top"/>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/addmood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add this Mood"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+        android:background="#E62667"
+        android:enabled="false"/>
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>

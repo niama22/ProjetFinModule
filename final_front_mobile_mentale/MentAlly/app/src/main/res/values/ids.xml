@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="login" type="id" />
+    <item name="statsTextView" type="id" />
+    <item name="emotionRecyclerView" type="id" />
+    <item name="legendLayout" type="id" />
+    <item name="lineChart" type="id" />
+</resources>
