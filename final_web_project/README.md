@@ -8,21 +8,6 @@ This repository contains the implementation of a Mood Classification and Recomme
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Rasa](https://img.shields.io/badge/rasa-%235A9DD8.svg?style=for-the-badge&logo=rasa&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
-## Table of Contents
-
-- [System Architecture](#system-architecture)
-- [User Journey](#user-journey)
-- [Implementation](#implementation)
-  - [Data Pre-processing](#data-pre-processing)
-  - [Rasa Framework](#rasa-framework)
-    - [Natural Language Understanding (NLU)](#natural-language-understanding-nlu)
-- [Features](#features)
-- [Demo Video](#demo-video)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## System Architecture
 
 The system architecture consists of the following components:
